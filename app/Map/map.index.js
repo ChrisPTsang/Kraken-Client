@@ -41,7 +41,7 @@ var MapTab = React.createClass({
       searchPins: [],
       annotations: [],
       autocomplete: false,
-      mapStyle: ['asset://styles/emerald-v8.json', 'asset://styles/dark-v8.json', 'asset://styles/light-v8.json', 'asset://styles/mapbox-streets-v8.json', 'asset://styles/satellite-v8.json'],
+      mapStyle: ['asset://styles/dark-v8.json', 'asset://styles/light-v8.json'],
       currentMap: 1,
       showMap: true
     };
@@ -318,11 +318,20 @@ var MapTab = React.createClass({
 
   // method for changing style of map on button press - NOT in working state because new map style covers old pins
   _onStylePressed: function () {
-    if(this.state.currentMap === 4) {
-      this.setState({currentMap: 0});
-    } else {
-      this.setState({currentMap: this.state.currentMap+1});
-    }
+    var context = this;
+    this.setState({showMap: false}, function() {
+      this.setState({showMap: true});
+
+      if(this.state.currentMap === 1) {
+        this.setState({currentMap: 0}, function() {
+          context._displayPins();
+        });
+      } else {
+        this.setState({currentMap: 1}, function() {
+          context._displayPins();
+        });
+      }
+    });
   },
 
   // map view render
@@ -337,7 +346,7 @@ var MapTab = React.createClass({
       showsUserLocation={true}
       ref={mapRef}
       accessToken={'pk.eyJ1IjoibWFyeW1hc29uIiwiYSI6IjM1NGVhNWZmNzQ5Yjk5NTczMDFhMzc3Zjg2ZGEyYzI0In0.7IdD26iFQhD2b6LbTIw_Sw'}
-      styleURL={'asset://styles/light-v8.json'}
+      styleURL={this.state.mapStyle[this.state.currentMap]}
       centerCoordinate={this.state.center}
       userLocationVisible={true}
       zoomLevel={this.state.zoom}
@@ -408,6 +417,12 @@ var MapTab = React.createClass({
             source={require('image!icon-target')}
           />
         </TouchableHighlight>
+        {/*<TouchableHighlight onPress={this._onStylePressed}> 
+          <Image
+            style={styles.styleButton}
+            source={require('image!brightness')}
+          />
+        </TouchableHighlight>*/}
       </View>
     );
   }

@@ -71,4 +71,12 @@ module.exports = StyleSheet.create({
     bottom: 50,
     right: 40
   },
+  // style button
+  styleButton: {
+    height: 40,
+    width: 40,
+    position: 'absolute',
+    bottom: 50,
+    right: 100
+  },
 });

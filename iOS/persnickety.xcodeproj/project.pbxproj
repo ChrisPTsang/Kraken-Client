@@ -7,14 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		008F07F31AC5B25A0029DE68 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 008F07F21AC5B25A0029DE68 /* main.jsbundle */; };
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
 		00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302C01ABCB91800DB3ED1 /* libRCTImage.a */; };
 		00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */; };
 		00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */; };
 		00E356F31AD99517003FC87E /* persnicketyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* persnicketyTests.m */; };
-		0412B4CB1B91876A00B1626C /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 0412B4CA1B91876A00B1626C /* main.jsbundle */; };
 		041ABA6B1B97BC9200EA1CA0 /* libRNKeyboardEvents.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 041ABA6A1B97BB6A00EA1CA0 /* libRNKeyboardEvents.a */; };
 		045FF7651B9D4385004E4E11 /* libRCTVideo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 045FF7611B9D42C7004E4E11 /* libRCTVideo.a */; };
 		0470E31A1BA254F70058DDCC /* libRNRecorder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0470E3171BA254CA0058DDCC /* libRNRecorder.a */; };
@@ -52,6 +50,7 @@
 		D313F50B1BACCC6700D73B01 /* libRCTMapboxGL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D313F5081BACCC5200D73B01 /* libRCTMapboxGL.a */; };
 		D313F50D1BACCC9000D73B01 /* Mapbox.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D313F50C1BACCC9000D73B01 /* Mapbox.bundle */; };
 		D313F50F1BACCCA700D73B01 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D313F50E1BACCCA700D73B01 /* Settings.bundle */; };
+		D34193911BB5B870003C3DAE /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = D37DC7331BB4CB7D0056AAEA /* main.jsbundle */; };
 		D3CF50DF1BAA246D006838CC /* libRCTAutoComplete.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CF50CB1BAA245E006838CC /* libRCTAutoComplete.a */; };
 /* End PBXBuildFile section */
 
@@ -263,6 +262,7 @@
 		D313F5021BACCC5200D73B01 /* RCTMapboxGL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTMapboxGL.xcodeproj; path = "../node_modules/react-native-mapbox-gl/RCTMapboxGL.xcodeproj"; sourceTree = "<group>"; };
 		D313F50C1BACCC9000D73B01 /* Mapbox.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Mapbox.bundle; path = "../node_modules/react-native-mapbox-gl/RCTMapboxGL/Mapbox.bundle"; sourceTree = "<group>"; };
 		D313F50E1BACCCA700D73B01 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = "../node_modules/react-native-mapbox-gl/RCTMapboxGL/Settings.bundle"; sourceTree = "<group>"; };
+		D37DC7331BB4CB7D0056AAEA /* main.jsbundle */ = {isa = PBXFileReference; lastKnownFileType = text; name = main.jsbundle; path = ../main.jsbundle; sourceTree = "<group>"; };
 		D3CF50C51BAA245D006838CC /* RCTAutoComplete.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAutoComplete.xcodeproj; path = "../node_modules/react-native-autocomplete/RCTAutoComplete.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -530,6 +530,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				D37DC7331BB4CB7D0056AAEA /* main.jsbundle */,
 				D313F50E1BACCCA700D73B01 /* Settings.bundle */,
 				D313F50C1BACCC9000D73B01 /* Mapbox.bundle */,
 				04EE92B61BA687C800036482 /* persnickety.xcodeproj */,
@@ -899,6 +900,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D34193911BB5B870003C3DAE /* main.jsbundle in Resources */,
 				D313F50F1BACCCA700D73B01 /* Settings.bundle in Resources */,
 				D313F50D1BACCC9000D73B01 /* Mapbox.bundle in Resources */,
 				04A0DB641BA743160093F973 /* Info.plist in Resources */,
@@ -907,10 +909,8 @@
 				58DA62B41B9B6E6E0061748A /* package.json in Resources */,
 				58DA62B21B9B6E6E0061748A /* DeviceUUID.ios.js in Resources */,
 				04A0DB791BA743E30093F973 /* Launch Screen.storyboard in Resources */,
-				008F07F31AC5B25A0029DE68 /* main.jsbundle in Resources */,
 				58DA62B31B9B6E6E0061748A /* LICENSE in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				0412B4CB1B91876A00B1626C /* main.jsbundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1072,7 +1072,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../node_modules/react-native/React/**",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1112,7 +1112,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../node_modules/react-native/React/**",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -1153,4 +1153,3 @@
 	};
 	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
 }
-
